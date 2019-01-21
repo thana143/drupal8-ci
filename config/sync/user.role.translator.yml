@@ -1,0 +1,11 @@
+uuid: 455e3751-169b-4b52-8edc-2339ed153202
+langcode: en
+status: true
+dependencies: {  }
+id: translator
+label: translator
+weight: 3
+is_admin: null
+permissions:
+  - 'create content translations'
+  - 'translate any entity'

@@ -1,0 +1,8 @@
+uuid: 4b428660-00bd-4224-b5ed-2f15277d6253
+langcode: en
+status: true
+dependencies: {  }
+id: rotator
+label: Rotator
+revision: 0
+description: 'Rotator block type'

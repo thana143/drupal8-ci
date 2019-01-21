@@ -1,0 +1,18 @@
+uuid: 7866b6b8-bd21-4875-9dbc-d5a9c8bc07a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotator
+id: block_content.rotator.info
+field_name: info
+entity_type: block_content
+bundle: rotator
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
