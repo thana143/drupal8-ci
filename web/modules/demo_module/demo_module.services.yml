@@ -1,0 +1,8 @@
+services:
+  demo_module.user_same_as_author:
+    class: Drupal\demo_module\Access\UserAuthorSame
+    tags:
+      - { name: access_check, applies_to: _user_same_as_author }
+  demo_module.data_getter_writer:
+    class: Drupal\demo_module\DataGetterWriter
+    arguments: ['@database']

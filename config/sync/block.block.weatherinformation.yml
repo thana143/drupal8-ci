@@ -1,0 +1,20 @@
+uuid: 5427f366-003f-4831-bacb-1c9394272e20
+langcode: en
+status: true
+dependencies:
+  module:
+    - demo_module
+  theme:
+    - bartik
+id: weatherinformation
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: weather_info
+settings:
+  id: weather_info
+  label: 'Weather Information'
+  provider: demo_module
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,8 @@
+
+d8_demo_console.d8_demo_controller_consoleoutput:
+  path: 'console/display'
+  defaults:
+    _controller: '\Drupal\d8_demo_console\Controller\D8DemoController::consoleoutput'
+    _title: 'console'
+  requirements:
+    _permission: 'access content'

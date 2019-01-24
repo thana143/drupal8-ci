@@ -1,0 +1,17 @@
+demo_module.hello_world:
+  title: 'Hello World'
+  description: 'Menu link for Hello World page'
+  route_name: demo_module.hello_world
+  expanded: 1
+  menu_name: main
+  weight: 100
+
+demo_module.hello_dynamics:
+  title: 'Hello Dynamic'
+  description: 'Menu link for Hello World page'
+  parent: demo_module.hello_world
+  route_name: demo_module.hello_dynamic
+  #expanded: 1
+  route_parameters: { name: 'Thana'}
+  menu_name: main
+  #weight: 0

@@ -1,0 +1,11 @@
+<?php
+function demo_module_theme() {
+    return [
+    'demo_module_weather_data' => [
+        'variables' => [
+            'city' => NULL,
+            'temp' => NULL,
+        ],
+    ],
+];
+}

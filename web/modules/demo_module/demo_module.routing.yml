@@ -1,0 +1,63 @@
+demo_module.hello_world:
+  path: '/hello-world'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\RouteController::hello_world'
+    _title: 'Welcome -Hello World message'
+  requirements:
+    _permission: 'access content'
+
+demo_module.hello_dynamic:
+  path: '/hello/{name}'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\RouteController::helloDynamic'
+    _title_callback: '\Drupal\demo_module\Controller\RouteController::helloDynamicTitleCallback'
+  requirements:
+    _permission: 'access training content'
+
+demo_module.hello_dynamic_entity:
+  path: '/hello-user/{user}'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntity'
+    _title_callback: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntityTitleCallback'
+  requirements:
+    _permission: 'access content'
+
+demo_module.hello_dynamic_node_entity:
+  path: '/details/{node}'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntityNode'
+    _title_callback_titl: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntityTitleNode'
+  requirements:
+    _custom_access: '\Drupal\demo_module\Controller\RouteController::listNodeAccess'
+
+demo_module.hello_dynamic_node_entity1:
+  path: '/details-list/{node}'
+  defaults:
+    _controller: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntityNode'
+    _title_callback_titl: '\Drupal\demo_module\Controller\RouteController::helloDynamicEntityTitleNode'
+  requirements:
+    _user_same_as_author: 'true'
+
+demo_module.simple_form:
+  path: '/simple/form'
+  defaults:
+    _form: '\Drupal\demo_module\Form\SimpleForm'
+  requirements:
+    _permission: 'access content'
+
+demo_module.simple_diform:
+  path: '/simple/diform'
+  defaults:
+    _form: '\Drupal\demo_module\Form\DiForm'
+  requirements:
+    _permission: 'access content'
+
+demo_module.admin_weather_config:
+  path: '/admin/weather-config'
+  defaults:
+    _form: '\Drupal\demo_module\Form\WeatherConfigForm'
+    _title: 'Weather config form'
+  requirements:
+    _permission: 'administer site configuration'
+
+

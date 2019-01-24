@@ -1,0 +1,7 @@
+simple/route:
+  path: 'simple/node'
+  defaults:
+    _title: 'node'
+    _form: 'Drupal\demo_module_drush\Form\simpleClass'
+  requirements:
+    _permission: 'node'

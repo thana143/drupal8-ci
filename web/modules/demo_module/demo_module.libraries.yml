@@ -1,0 +1,10 @@
+weather-block:
+  version: 1.x
+  css:
+    component:
+      css/weather_block.css: {}
+  js:
+    js/jquery.flip.min.js: {}
+    js/weather-block-flip.js: {}
+  dependencies:
+    - core/jquery

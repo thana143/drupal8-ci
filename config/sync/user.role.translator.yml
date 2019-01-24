@@ -7,5 +7,7 @@ label: translator
 weight: 3
 is_admin: null
 permissions:
+  - 'access training content'
+  - 'acess training content'
   - 'create content translations'
   - 'translate any entity'
