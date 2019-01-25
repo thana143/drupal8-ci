@@ -1,4 +1,7 @@
 <?php
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\demo_module\Event\NodeInsertEvent;
+
 function demo_module_theme() {
     return [
     'demo_module_weather_data' => [
@@ -9,3 +12,11 @@ function demo_module_theme() {
     ],
 ];
 }
+
+function demo_module_node_insert(EntityInterface $node) {
+    $ed = \Drupal::service('event_dispatcher');
+    $ed->dispatch(
+      'node.insert',
+      new NodeInsertEvent($node)
+    );
+  }

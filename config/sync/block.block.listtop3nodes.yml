@@ -1,0 +1,21 @@
+uuid: 662c3c7c-ca93-4ac2-98e9-c165cc1b22b8
+langcode: en
+status: false
+dependencies:
+  module:
+    - demo_module
+  theme:
+    - bartik
+id: listtop3nodes
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: demo_module_list_top_3_nodes
+settings:
+  id: demo_module_list_top_3_nodes
+  label: 'List top 3 nodes'
+  provider: demo_module
+  label_display: visible
+  foo: 'Hello world!'
+visibility: {  }

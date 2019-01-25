@@ -6,3 +6,14 @@ services:
   demo_module.data_getter_writer:
     class: Drupal\demo_module\DataGetterWriter
     arguments: ['@database']
+  demo_module.event_subscriber1:
+    class: Drupal\demo_module\EventSubscriber\Drupal8DemoSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
+
+  demo_module.event_subscriber:
+    class: Drupal\demo_module\EventSubscriber\NodeInsertLogSubmitSubscriber
+    arguments: ['@messenger', '@logger.factory']
+    tags:
+      - { name: event_subscriber }

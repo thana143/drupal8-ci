@@ -1,0 +1,15 @@
+block.settings.demo_module_list_top_3_nodes:
+  type: block_settings
+  label: 'List top 3 nodes block'
+  mapping:
+    foo:
+      type: string
+      label: Foo
+
+block.settings.demo_module_latest_3_nodes:
+  type: block_settings
+  label: 'Latest 3 nodes block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

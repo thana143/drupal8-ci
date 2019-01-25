@@ -1,0 +1,21 @@
+uuid: c67f055e-599b-4c23-8aa7-3d75d8eee692
+langcode: en
+status: true
+dependencies:
+  module:
+    - demo_module
+  theme:
+    - bartik
+id: latest3nodes
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: demo_module_latest_3_nodes
+settings:
+  id: demo_module_latest_3_nodes
+  label: 'Latest 3 nodes'
+  provider: demo_module
+  label_display: visible
+  foo: 'Hello world!'
+visibility: {  }
